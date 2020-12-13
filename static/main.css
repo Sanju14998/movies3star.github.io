@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+
+}
+.brand{
+    
+    
+    background-color: #581845;
+    text-align: center;
+    font-size: 25px;
+    /* display: none; */
+    
+}
+/* >>>>>>>>>>>>>>>>>>>>>> LOGIN AND SING UP BUTTON>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width:750px){
+    .brand #nav,#donate{
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.brand  a{
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.881);
+    
+}
+
+
+
+
+
+
+ul li .nav-link{
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-top: 8px;
+}
+@media screen and (max-width:1200px){
+    ul li .nav-link{
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+ /* '''INPUT OR SEARCH ENGINE OR BAR DESIGN''' */
+ .input-group{
+     margin-left: 20%;
+     margin-right: 20%;
+    
+ }
+ 
+
+ @media screen and (max-width:436px){
+     .nav .input-group a{
+         margin-top: 8px;
+
+     }
+ }
+
+
+ /* ''''''''''''''''''''''''''''''''''''CREATING THE CSS OF BOLLYWOOD MOVIES TITLE'''''''    */
+ .bollywood h4{
+     font-size: 40px;
+     
+     color: white;
+ }
+ .bollywood{
+     text-align: center;
+     margin-top: 15px;
+ }
+
+ /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>CREATING THE CSS OF CARD>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.nav img:hover{
+    width: 12rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+       /* ------------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>CREATING THE CSS OF CARD BUTTON>>>>>>>>>>>>>>>>>>>>>>>>------ */
+.nav .card .card-body .btn{
+    color: whitesmoke;
+    margin-left: 0px;
+    font-size: large;
+}
+.nav .card .card-body .card-text{
+text-align: center;
+}
+.nav .card .card-body .watch{
+    margin-top: 5px;
+}
+.nav .card .card-body #download{
+    color: ghostwhite;
+    background-color: rgba(255, 0, 0, 0.558);
+
+    
+}
+.nav .card .card-body #download:hover{
+    color: black;
+}

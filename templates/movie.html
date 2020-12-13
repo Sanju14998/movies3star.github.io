@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="download_button.html">
+</head>
+<body>
+    <nav>
+       
+
+   
+    <div class="brand pb-2 pt-2">
+        <ul id="donate" class="nav ml-3" style="padding-top:0px;">
+            <li class="nav-item"style="margin-bottom:-54px;" ><a href="" class="nav-link btn-lg btn btn-outline-success">Donate</a></li>
+           
+        </ul>
+        <div class="time inline ml-4 mt-2">
+            <h3 style="color:olive;"><i>{{date}}</i></h3>
+        </div>
+        <div class="justify-content-end">
+            <h4 style="color:olive;"><i>{{time}}</i></h4>
+
+        </div>
+       
+       <a href="" class="movie"> <h1><i>Movie3star.Com</i></h1></a>
+       <ul id="nav" class="nav pr-3   justify-content-end">
+        <li class="nav-item pr-3" style="margin-top: -49px;"><a href="" id="login" data-target="#myModal" data-toggle="modal" style=" color: whitesmoke;" class=" nav-item btn btn-outline-primary btn-lg">login</a></li>
+            <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CREATING THE LOGIN  FORM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
+            <!-- <script>
+                $(document).ready(function(){
+                $('#login').click(function(){
+                    $('#myModal').fadeToggle(500);
+
+                });
+                });
+            </script> -->
+
+
+            <form action="//main1.py/login" method="GET">
+            <div class="modal fade" action="/login" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title" style="text-align: center;">Sing Up</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="/login" method="GET" enctype="multipart/form-data" target="_blank">
+                            <div>
+            
+                          
+                            <label for="" style="text-align: start;"><h4 style="text-align: left;">Email</h4></label><br> <input type="email" name="email"  id="email" autofocus required class="form-control" style="text-align: center; color: green;" placeholder="Enter your email"> <br>
+                            <label for=""><h4 style="text-align: left;">Password</h4></label><br> <input type="password" name="password" class="form-control" required id="password" style="text-align: center;color: green;" placeholder="Enter your password"> <br>
+                            <label for=""><h4 style="text-align: left;">Again Password</h4></label> <br><input type="password" name="password" class="form-control" required id="againPassword" style="text-align: center;color: green;" placeholder="Again password"><br>
+                        </div>
+                        </form>
+                     
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <div class="" action="/login">
+            
+                       
+                      <button type="submit" class="btn btn-outline-danger " data-dismiss="modal">Submit</button>
+                      <button type="reset" class="btn btn-outline-danger" data-dismiss="modal">Reset</button>
+                    </div>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+            </form>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END OF SING UP FROM>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+        <li class="nav-item"  style="margin-top: -49px;"><a href=""  style=" color: whitesmoke;" class=" nav-item btn btn-lg btn-outline-primary">Sing Up</a></li>
+    </ul>
+    </div>
+</nav>
+
+    <ul class="nav bg-dark justify-content-start p-3  flex-row">
+        <li class="nav-item pl-0">
+            <a href="http://127.0.0.1:5000/" class="nav-link btn btn-outline-success">Home</a>
+            
+        
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="http://127.0.0.1:5000/hollywood1"  class="nav-link btn btn-outline-success">Hollywood</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Bollywood</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Tollywood</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Adult</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <li class="nav-item ">
+            <a href="" class="nav-link btn btn-outline-success">Sport </a>
+
+        <li class="nav-item pr-2 pl-2">
+        </li> <li class="nav-item ">
+            <a href="" class=" id nav-link btn btn-outline-success">Hollywood Hindi Dual Audio  </a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <li class="nav-item ">
+            <a href="" class="nav-link btn btn-outline-success">South Indian Dubbed </a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Urdu Movies</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">War</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2 ">
+            <a href="" class="nav-link btn btn-outline-success">18+ Web Series</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Punjabi Movies</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Bengali Movies </a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Adventures</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Biography</a>
+
+        </li>
+
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Sci-Fi</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Horror </a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Action </a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Animation</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Family</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">History</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Adult 18+ Movies</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Hindi Web Series</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Thriller</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Fantasy</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Comedy</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Drama</a>
+
+        </li>
+
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Mystery</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Unrated</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Hindi Tv series</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Documentry</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Netflix Movies</a>
+
+        </li>
+        <li class="nav-item pr-2 pl-2">
+            <a href="" class="nav-link btn btn-outline-success">Amazon Prime</a>
+
+        </li>
+
+    </ul>
+
+    
+<nav class="nav bg-secondary p-3 mt-5" style="background-color:#581845;">
+    <div class="input-group">
+        
+        <input type="search"  name="" class="form-control" style="text-align: center;" placeholder="Search any Movie Here" id="">
+        <div class="input-group-append">
+                <div class="input-group-text" style="width: 50px;"><i class="fa fa-search" aria-hidden="true"></i></div>
+        </div>
+        <a href="" class="btn btn-success ml-4  mt-lg-0">Search </a>
+    </div>
+</nav>
+{% block contain1 %}
+
+
+                                <!-- '''' CREAT A MOVIES TITLE''' -->
+
+                                <div class="bollywood pt-2 pb-3" style="background-color: #581845;">
+                                   
+                                    <h4>Latest  Bollywood Movies </h4> 
+                                   
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 <!-- '''CREATING THE CARD ' -->
+
+
+
+<br>
+
+                                 <nav class="nav">
+                                   
+                                    <div class="card ml-3 mt-2" style="width: 10rem;">
+                                        
+
+
+                                   <a href="">    <img src="/static/Bollywood movie banner/angrezi.jpg" alt="" class="card-img-top"> </a> 
+                                        <div class="card-body pb-0">
+                                            <a href="" target="_blank" id="download"  class="btn mb-2 btn-dark ml-2">Download</a>
+                                             
+
+
+                                            <a href="" action="/watch" id="watch" data-toggle="modal" data-target="#exampleModalCenter" class="btn watch btn-dark">Watch Trailer</a> <hr>
+                                        </div>
+                                    </div>
+
+ 
+
+                                    <div class="card ml-3 mt-2" style="width: 10rem;">                                  
+
+                                       <a href=""><img src="/static/Bollywood movie banner/baghi.jpg"  alt="" class="card-img-top"></a> 
+                                       
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#baghi" data-toggle="modal" class="btn watch btn-dark">Watch Trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card ml-3 mt-2" style="width: 10rem;">
+
+                                       <a href=""> <img src="/static/Bollywood movie banner/bhoot.jpg" alt="" class="card-img-top"> </a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="exe123" data-toggle="modal" class="btn watch btn-dark">Watch Trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card ml-3 mt-2 " style="width: 10rem;">
+
+                                      <a href="">  <img src="/static/Bollywood movie banner/body.jpg" alt="" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#body1" data-toggle="modal" class="btn watch btn-dark">Watch Trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                       <a href=""> <img src="/static/Bollywood movie banner/bulbul.jpg" alt="" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#bulbul1" data-toggle="modal" class="btn watch btn-dark">Watch Trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+                                       <a href=""> <img src="/static/Bollywood movie banner/chhappak.jpg" alt="" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#chhappak1" data-toggle="modal" class="btn watch btn-dark">Watch Trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                        <a href=""><img src="/static/Bollywood movie banner/choked.jpg" alt="" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#choked1" data-toggle="modal" class="watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                      <a href="">  <img src="/static/Bollywood movie banner/dharal.jpg" alt="" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#dharal1" data-toggle="modal" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                       <a href=""> <img src="/static/Bollywood movie banner/dil bechara.jpg" alt="" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#dil1" data-toggle="modal" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                       <a href=""> <img src="/static/Bollywood movie banner/guilty.jpg" alt="" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#guilty1" data-toggle="modal" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                       <a href=""> <img src="/static/Bollywood movie banner/gulabo.jpg" alt="" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#gulabo1" data-toggle="modal" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                       <a href=""> <img src="/static/Bollywood movie banner/gunjan.jpg" alt="" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#gunjan1" data-toggle="modal" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                       <a href=""> <img src="/static/Bollywood movie banner/mardaani.jpg" alt="" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#mardaani1" data-toggle="modal" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                       <a href=""><img src="/static/Bollywood movie banner/lootcase.jpg" alt="" class="card-img-top"></a> 
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#lootcase1" data-toggle="modal" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                     <a href="">  <img src="/static/Bollywood movie banner/mask.jpg" alt="" class="card-img-top"></a> 
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#mask1" data-toggle="modal" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                       <a href=""><img src="/static/Bollywood movie banner/mrs.jpg" alt="" class="card-img-top"></a> 
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#mrs1" data-toggle="modal" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                       <a href=""> <img src="/static/Bollywood movie banner/pangaa.jpg" alt="" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#pangaa1" data-toggle="modal" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                       <a href=""><img src="/static/Bollywood movie banner/raat akeli hai.jpg" alt="" class="card-img-top"></a> 
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#raat1" data-toggle="modal" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                       <a href=""> <img src="/static/Bollywood movie banner/shakuntla devi.jpg" alt="" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#shakuntla1" data-toggle="modal" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                                       <a href=""> <img src="/static/Bollywood movie banner/shubh.jpg" alt="" class="card-img-top"></a>
+                                        <div class="card-body">
+                                            <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                                            <a href="" id="watch" data-target="#shubh1" data-toggle="modal" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                                        </div>
+                                    </div>
+                                    
+
+
+                                 </nav>
+
+    {% endblock %}
+                                
+                                   
+                                 
+       
+                                 
+    <!-- ''''''>>>>>>>>>>>>>>>>>>> CREATING THE HOLLYWOOOD MOVIES TITLE>>>>>>>>>>>>>>>>>> -->
+{% block hollywood %}
+
+<div class="bollywood pt-2 pb-3" style="background-color: #581845;">
+                                   
+<h4>Latest  Hollywood Movies Dual Audio </h4> 
+        </div>
+
+
+
+        
+        <nav class="nav">
+                                   
+            <div class="card ml-3 mt-2" style="width: 10rem;">
+                
+
+
+           <a href="">    <img src="/static/Hollywood Movie banner/ad astra.jpg" alt="" class="card-img-top"> </a> 
+                <div class="card-body pb-0">
+                    <a href="http://127.0.0.1:5000/movie1" id="download" target="blank" class="btn btn-dark mb-2 ml-2">Download</a>
+                    <a href="" id="watch" class="btn watch btn-dark">Watch Trailer</a> <hr>
+                </div>
+            </div>
+
+            <div class="card ml-3 mt-2" style="width: 10rem;">
+
+               <a href=""><img src="/static/Hollywood Movie banner/alita.jpg" alt="" class="card-img-top"></a> 
+               
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class="btn watch btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card ml-3 mt-2" style="width: 10rem;">
+
+               <a href=""> <img src="/static/Hollywood Movie banner/anna.jpg" alt="" class="card-img-top"> </a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class="btn watch btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card ml-3 mt-2 " style="width: 10rem;">
+
+              <a href="">  <img src="/static/Hollywood Movie banner/bloodshot.jpg" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class="btn watch btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+               <a href=""> <img src="/static/Hollywood Movie banner/docter sleep.jpg" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class="btn watch btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+               <a href=""> <img src="/static/Hollywood Movie banner/dolite.jpg" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class="btn watch btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+                <a href=""><img src="/static/Hollywood Movie banner/fantsy island.jpg" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class="watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+              <a href="">  <img src="/static/Hollywood Movie banner/fast and furius-2019.jpg" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+               <a href=""> <img src="/static/Hollywood Movie banner/ford.jpg" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+               <a href=""> <img src="/static/Hollywood Movie banner/gemini.jpg" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+               <a href=""> <img src="/static/Hollywood Movie banner/godzilla.jpg" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+               <a href=""> <img src="/static/Hollywood Movie banner/it chapter two.jpg" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+               <a href=""> <img src="/static/Hollywood Movie banner/joker.jpg" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+               <a href=""><img src="/static/Hollywood Movie banner/knives.jpg" alt="" class="card-img-top"></a> 
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+             <a href="">  <img src="/static/Hollywood Movie banner/la section.jpg" alt="" class="card-img-top"></a> 
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+               <a href=""><img src="/static/Hollywood Movie banner/lodge.jpg" alt="" class="card-img-top"></a> 
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+               <a href=""> <img src="/static/Hollywood Movie banner/lost girl.jpg" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+               <a href=""><img src="/static/Hollywood Movie banner/once upon e time en hollywood.jpg" alt="" class="card-img-top"></a> 
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+               <a href=""> <img src="/static/Hollywood Movie banner/richard.jpg" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            <div class="card mt-2 ml-3 " style="width: 10rem;">
+
+               <a href=""> <img src="/static/Hollywood Movie banner/scandale.jpg" alt="" class="card-img-top"></a>
+                <div class="card-body">
+                    <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                    <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                </div>
+            </div>
+            
+
+
+         </nav>
+
+{% endblock %}
+
+{% block contain %}
+
+
+
+<!-- '''''>>>>>>>>>>>>>>>>>>>>>>> CREATING THE SOUTH INDIAN MOVIES LIST>>>>>>>>>>>>>>>>>>>>' -->
+           
+        
+<div class="bollywood pt-2 pb-3" style="background-color: #581845;">
+                                   
+    <h4>Latest  South Indian Movies Dual Audio </h4> 
+            </div> 
+
+
+            <nav class="nav">
+                                   
+                <div class="card ml-3 mt-2" style="width: 10rem;">
+                    
+    
+    
+               <a href="">    <img src="/static/South movie banner/ala.jpg" alt="" class="card-img-top"> </a> 
+                    <div class="card-body pb-0">
+                        <a href="" id="download" class="btn btn-dark mb-2 ml-2">Download</a>
+                        <a href="" id="watch" class="btn watch btn-dark">Watch Trailer</a> <hr>
+                    </div>
+                </div>
+    
+                <div class="card ml-3 mt-2" style="width: 10rem;">
+    
+                   <a href=""><img src="/static/South movie banner/christmas.jpg" alt="" class="card-img-top"></a> 
+                   
+                    <div class="card-body">
+                        <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                        <a href="" id="watch" class="btn watch btn-dark">Watch trailer</a> <hr>
+                    </div>
+                </div>
+                <div class="card ml-3 mt-2" style="width: 10rem;">
+    
+                   <a href=""> <img src="/static/South movie banner/darbar.jpg" alt="" class="card-img-top"> </a>
+                    <div class="card-body">
+                        <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                        <a href="" id="watch" class="btn watch btn-dark">Watch trailer</a> <hr>
+                    </div>
+                </div>
+                <div class="card ml-3 mt-2 " style="width: 10rem;">
+    
+                  <a href="">  <img src="/static/South movie banner/happy.jpg" alt="" class="card-img-top"></a>
+                    <div class="card-body">
+                        <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                        <a href="" id="watch" class="btn watch btn-dark">Watch trailer</a> <hr>
+                    </div>
+                </div>
+                <div class="card mt-2 ml-3 " style="width: 10rem;">
+    
+                   <a href=""> <img src="/static/South movie banner/jaanu.jpg" alt="" class="card-img-top"></a>
+                    <div class="card-body">
+                        <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                        <a href="" id="watch" class="btn watch btn-dark">Watch trailer</a> <hr>
+                    </div>
+                </div>
+                <div class="card mt-2 ml-3 " style="width: 10rem;">
+                   <a href=""> <img src="/static/South movie banner/miss india.jpg" alt="" class="card-img-top"></a>
+                    <div class="card-body">
+                        <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                        <a href="" id="watch" class="btn watch btn-dark">Watch trailer</a> <hr>
+                    </div>
+                </div>
+                <div class="card mt-2 ml-3 " style="width: 10rem;">
+    
+                    <a href=""><img src="/static/South movie banner/pattas.jpg" alt="" class="card-img-top"></a>
+                    <div class="card-body">
+                        <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                        <a href="" id="watch" class="watch btn btn-dark">Watch trailer</a> <hr>
+                    </div>
+                </div>
+                <div class="card mt-2 ml-3 " style="width: 10rem;">
+    
+                  <a href="">  <img src="/static/South movie banner/world famouse lover.jpg" alt="" class="card-img-top"></a>
+                    <div class="card-body">
+                        <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                        <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                    </div>
+                </div>
+                <div class="card mt-2 ml-3 " style="width: 10rem;">
+    
+                    <a href="">  <img src="/static/South movie banner/world famouse lover.jpg" alt="" class="card-img-top"></a>
+                      <div class="card-body">
+                          <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                          <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                      </div>
+                  </div>
+                  <div class="card mt-2 ml-3 " style="width: 10rem;">
+    
+                    <a href="">  <img src="/static/South movie banner/world famouse lover.jpg" alt="" class="card-img-top"></a>
+                      <div class="card-body">
+                          <a href="" id="download" class="btn mb-2 btn-dark ml-2">Download</a>
+                          <a href="" id="watch" class=" watch btn btn-dark">Watch trailer</a> <hr>
+                      </div>
+                  </div>
+
+                </nav>
+
+
+         {% endblock %}
+
+<hr><br><br><br>
+
+<nav class="bg-dark">
+    <div class="header-brand" style="text-align: center;">
+        <a class=" navbar-brand mt-3" style="color: rgba(255, 0, 0, 0.792);"  href="#"><h4><i>Movie3star.Com <span>@2020</span></i></h4></a>
+
+    </div>
+
+
+
+    <ul class="nav mt-1 mb-4 justify-content-center">
+        <li class="nav-item">
+            <a href="" class="nav-link">Home</a>
+
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Contact Us</a>
+
+
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">About Us</a>
+
+
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Developver</a>
+
+
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Disclaimer</a>
+
+
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">Help !!!</a>
+        </li>
+        <li class="nav-item">
+            
+
+        </li>
+       
+    </ul>
+   
+    
+</nav>
+
+                                                 
+<div class="modal fade" id="exe123" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="false">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+            </div>
+  
+  
+          </div>
+          
+          <div class="modal-footer">
+              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+  
+          </div>
+
+                                                          
+<div class="modal " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="false">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NF0TRPF05GQ" allowfullscreen></iframe>
+            </div>
+  
+  
+          </div>
+          
+          <div class="modal-footer">
+              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+  
+          </div>
+                                                
+          <div class="modal fade" id="body1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="false">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                    </div>
+          
+          
+                  </div>
+                  
+                  <div class="modal-footer">
+                      <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+          
+                  </div>
+                                                
+                  <div class="modal fade" id="bulbul1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="chhappak1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="choked1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="dharal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="dil1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="guilty1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="gulabo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="gunjan1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="mardaani1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="lootcase1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="mask1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="mrs1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="panga1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="raat1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="shakuntla1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                                                       
+                  <div class="modal fade" id="shubh1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">You are watching the Trailer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="false">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bJUBKTa3iRY" allowfullscreen></iframe>
+                            </div>
+                  
+                  
+                          </div>
+                          
+                          <div class="modal-footer">
+                              <button type="close" id= "close"  data-dismiss="modal" style="padding: 8px;" class="btn close btn-warning btn-lg"> Close</button>
+                  
+                          </div>
+
+        
+                  
+
+
+
+
+
+    
+</body>
+</html>
